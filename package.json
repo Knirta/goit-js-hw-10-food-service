@@ -3,10 +3,12 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "homepage": "https://github.com/Knirta/goit-js-hw-10-food-service",
+  "homepage": "https:/Knirta.github.io/goit-js-hw-10-food-service",
   "scripts": {
     "dev": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /goit-js-hw-10-food-service"
+    "build": "parcel build src/*.html --public-url /goit-js-hw-10-food-service/",
+    "deploy": "gh-pages -d dist",
+    "predeploy": "npm run build"
   },
   "repository": {
     "type": "git",
@@ -26,6 +28,7 @@
     "sass": "^1.32.8"
   },
   "dependencies": {
-    "css": "^3.0.0"
+    "css": "^3.0.0",
+    "gh-pages": "^3.2.0"
   }
 }
